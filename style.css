@@ -1,0 +1,312 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	margin: auto;
+	background-image: url(img/achter.jpg);
+	background-size: cover;
+	width: 100%;
+}
+
+div.page{
+	background-color: transparent;
+	padding: 0px;
+	height: 100%;
+	width: 87%;
+	max-width: 1100px;
+	margin: auto;
+}
+
+div.popupContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+    overflow: auto;
+	background-color: rgba(212, 156, 193, 0.8);
+	z-index: 1;
+	font-family: "Berlin Sans FB", Verdana, sans-serif;
+	font-size: 1.3em;	
+}
+
+div.popup {
+	border: 2px solid black;
+	border-radius: 20px;
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    height: 64%;
+    width: 90%;
+    background-image: url(img/zwangersmal.jpg);
+    background-repeat: round;
+    text-align: center;
+}
+
+div.popupcontent h1 {
+	font-size: 0.8em;
+	color: rgba(255,255,255, 0.6);
+}
+
+div.popup img {	
+	width: 150px;
+	height: 100px;
+	border-radius: 20px;
+}
+
+div.popuptext {	
+	border: 1px solid black;
+    border-radius: 10px;
+    padding: 2%;
+	margin-top: 35%;
+	font-size: 0.7em;
+	margin-left: 2%;
+	margin-right: 2%;
+	color: rgba(255,255,255, 0.6);
+	background-color: rgba(212, 156, 193, 0.6);
+}
+
+div.header{
+	margin: 6.0% auto 4.0%;
+}
+
+div.header img{
+	width: 50%;
+	max-width: 260px;
+	margin: 1.0% auto;
+	border: 1px solid black;
+	border-radius: 10px;	
+}
+
+div.content{
+	width: 100%;
+	margin: 0 auto;
+}
+
+div.content ul.nav{
+	list-style-type: none;
+	width: 100%;
+	max-width: 550px;
+	height: 100%;
+	padding: 2.0%;
+	display: table;
+	border-collapse: separate;
+  	border-spacing: 0.09em;	 	
+}
+
+div.content ul.nav li{
+	width: 25%;
+	max-width: 110px;
+	height: 89.08%;
+	max-height: 110px;
+	margin: 1.0%;
+	border: 1px solid black;
+	border-radius: 5px;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+div.content ul.nav li h3{
+	background-color: rgba(212,156,193,0.6);
+	border-radius: 5px;
+	padding: 2px;
+	font-size: 0.95em;
+}
+
+div.content ul.nav li.menu{
+	background-size: cover;
+}
+
+div.content ul.nav button{
+	background: none;
+	border: none;
+	width: 100%;
+}
+
+div.content ul.nav li img{
+	width: 100%;
+	border-radius: 5px;
+	display: block;
+}
+
+div.content ul.nav li a{
+	text-decoration: none;
+	color: black;
+	font-family: "Berlin Sans FB", Verdana, sans-serif;
+	font-size: 0.7em;
+}
+
+div.content ul.nav li a.facebook{
+	
+}
+
+div.content div.main{
+	margin-top: 7.0%;
+	width: 81%;
+	max-width: 340px;
+  	border: 1px solid black;
+  	border-radius: 10px;
+  	padding: 2%;
+  	background-color: rgba(212, 156, 193, 0.6);
+  	overflow: hidden;
+}
+
+div.content div.main img{
+	width: 85%;
+	max-width: 275px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+div.content div.main h4{
+	font-family: "Berlin Sans FB", Verdana, sans-serif;
+	font-size: 1.3em;
+}
+
+div.content div.main-text{
+	max-width: 300px;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 3.0%;
+	background-color: rgba(255,255,255, 0.6);
+	font-family: "Berlin Sans FB", Verdana, sans-serif;
+}
+
+div.footer{
+	margin: 0 auto;
+	color: rgba(212,156,193, 0.6);
+	font-family: "Berlin Sans FB", Verdana, sans-serif;
+	font-size: 0.6em;
+	padding-top: 18px;
+}
+
+div.footer p.quote{
+	font-size: 1.5em;
+}
+
+div.footer p.numbers{
+	width: 85%;
+}
+
+div.footer img{
+        width: 10px;
+        border-radius: 2px;
+}
+
+div.footer p.website{
+	width: 85%;
+	font-size: 1.1em;
+	margin-bottom: 2.0%;
+}
+
+@media all and (min-width: 570px){
+	div.popup { 
+		background-image: url(img/zwanger.jpg);
+		height: 64%;
+    	width: 46%;
+	}
+}
+
+@media all and (min-width: 768px){
+	div.content ul.nav{
+		border: 1px solid black;
+		border-radius: 10px;
+		background-color: rgba(212,156,193, 0.6);
+	}
+
+	div.content div.main{
+		max-width: 900px;
+	}
+
+	div.content div.main img{
+		float: left;
+		width: 45%;
+		max-width: none;
+	}
+
+	div.content div.main-text{
+		width: 45%;
+		max-width: 500px;
+		float: left;
+		margin-left:2.0%;
+		font-size: 1.3em;
+	}
+
+	
+
+	div.popupcontent h1 {
+		font-size: 1.0em;
+	}
+
+	div.popuptext {		
+		margin-top: 20%;		
+		font-size: 0.8em;		
+	}
+}
+
+@media all and (min-width: 986px){
+	body{
+		background-image: url(img/achter4.jpg);
+	}
+
+	div.header{
+		float:left;
+		width: 28%;
+		max-width: 260px;
+		margin: 6.0% auto 4.0%;
+	}
+
+	div.header img{
+		width: 100%;
+		max-width: 260px;
+	}
+
+	div.content ul.nav{
+		float: right;
+		margin-top: 9.0%;
+	}
+
+	div.content div.main{
+		max-width: 800px;
+		clear: both;
+	}
+
+	div.content div.main img{
+		float: left;
+	}
+
+	div.content div.main-text{
+		width: 46.4%;
+		max-width: 500px;
+		font-size: 1.3em;
+	}
+
+	div.popuptext {
+		margin-top: 20%;
+		font-size: 0.9em;
+	}
+
+	/*div.footer p{
+		color: black;
+	}*/
+}
+
+@media all and (min-width: 1148px){
+	div.header{
+		margin-left:4%;
+	}
+
+	div.content ul.nav{
+		margin-right: 4%;
+	}
+
+	div.popuptext {
+		margin-top: 20%;
+		font-size: 1.0em;
+	}
+}
